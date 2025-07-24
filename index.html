@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Market</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- --------------- Header Section ------------- -->
     <header>
         <!-- Navber Section -->
-        <section class="flex justify-center mb-7">
+        <section class="flex justify-center mb-32">
             <div class="flex items-center justify-between w-77 md:w-6xl mt-7">
                 <div class="">
                     <img class="h-9 " src="./assets/logo.png" alt="">
@@ -20,9 +24,9 @@
                 <div class="">
                     <ul class="flex md:gap-12">
                         <li><a class="invisible md:visible" href="#">Home</a></li>
-                        <li><a class="invisible md:visible" href="#">Shop</a></li>
-                        <li><a class="invisible md:visible" href="#">About Us</a></li>
-                        <li><a cl href="#">Cart($54)</a></li>
+                        <li><a class="invisible md:visible md:text-black md:opacity-50" href="#">Shop</a></li>
+                        <li><a class="invisible md:visible md:text-black md:opacity-50" href="#">About Us</a></li>
+                        <li><a cl href="#">Cart($54)<i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -125,7 +129,7 @@
         </section>
 
         <!-- Flower & Plants Lover -->
-        <section class="mb-36 md:w-6xl flex justify-center ml-5">
+        <section class="mb-36 md:w-6xl flex justify-center md:ml-36 md:mb-32">
             <div class=" md:flex justify-items-center items-center">
                 <!-- Flower & Plants Lover Image -->
                 <div class="justify-items-center mb-4 ">
@@ -177,9 +181,12 @@
         <!-- class="bg-[url('/assets/deal-bloom.png')]" -->
         <!-- class="bg-[url('/assets/deal-ana.png')]" -->
         <!-- class="bg-[url('/assets/deal-zabo.png')]" -->
-        <section class=" md:w-6xl text-center justify-items-center mb-32 ">
-            <h1 class="text-2xl font-bold"><span class="text-amber-500">Latest</span> Deals</h1>
-            <p class="text-sm text-black opacity-50 w-80 mb-12">Indulge your senses with the beauty and fragrance
+        <section class=" md:w-6xl text-center justify-items-center mb-32 md:ml-36 ">
+            <h1 class="text-2xl font-bold md:text-5xl md:font-bold"><span class="text-amber-500">Latest</span> Deals
+            </h1>
+            <p class="text-sm text-black opacity-50 w-80 mb-12 md:text-xl md:w-4xl">Indulge your senses with the beauty
+                and
+                fragrance
                 of our fresh
                 flower shop. From classic roses to exotic
                 blooms, we
@@ -213,48 +220,49 @@
 
 
         <!-- Join the colorful Bunch -->
-        <section class="text-center justify-items-center ">
-            <div class="bg-[url('/assets/news-letter-bg.png')] w-full h-64 bg-cover">
+        <section class="text-center justify-items-center">
+            <div class="bg-[url('/assets/news-letter-bg.png')] w-full h-64 bg-cover md:h-96">
 
-                <h1 class="text-2xl font-bold text-white pt-20 pb-5">Join the colorful Bunch</h1>
-                <div class="flex justify-center S">
-                    <input class="bg-white pl-1.5 h-12" type="text" placeholder="Write email">
+                <h1 class="text-2xl font-bold text-white pt-20 pb-5 md:text-5xl md:font-bold">Join the colorful Bunch
+                </h1>
+                <div class="flex justify-center ">
+                    <input class="bg-white pl-1.5 h-12 md:w-[640px]" type="text" placeholder="Write email">
                     <a href=""><button
-                            class="bg-amber-700 h-12 pl-5 pr-5 text-white font-semibold">Subscribe</button></a>
+                            class="bg-amber-700 h-12 pl-5 pr-5 text-white font-semibold md:w-[180px] text-base">Subscribe</button></a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-blue-100">
-        <div class="mb-3 w-80 pl-2">
+    <footer class="bg-blue-100 md:flex gap-28 mt-12 md:bg-white md:justify-items-center md:ml-40">
+        <div class="mb-3 w-80 pl-2 md:pt-5">
             <img src="./assets/logo.png" alt="">
             <p class="text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
         </div>
-        <div class="pl-2">
+        <div class="pl-2 md:flex md:gap-28 ">
             <div class="gap-8 text-gray-500">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact Us</a></li>
+                <ul class="">
+                    <li class=" md:mb-8"><a href="">Home</a></li>
+                    <li class=" md:mb-8"><a href="">About Us</a></li>
+                    <li class=" md:mb-8"><a href="">Blog</a></li>
+                    <li class=" md:mb-8"><a href="">FAQ</a></li>
+                    <li class=" md:mb-8"><a href="">Contact Us</a></li>
                 </ul>
             </div>
             <div class="gap-8 text-gray-500 mb-3">
                 <ul>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of Service</a></li>
-                    <li><a href="">Help Center</a></li>
+                    <li class="md:mb-8"><a href="">Features</a></li>
+                    <li class="md:mb-8"><a href="">Pricing</a></li>
+                    <li class="md:mb-8"><a href="">Privacy Policy</a></li>
+                    <li class="md:mb-8"><a href="">Terms of Service</a></li>
+                    <li class="md:mb-8"><a href="">Help Center</a></li>
                 </ul>
             </div>
         </div>
-        <div class="flex gap-3 mb-12 pl-2">
-            <img class="w-7" src="./assets/icon-twitter.png" alt="">
-            <img class="w-7" src="./assets/icon-facebook.png" alt="">
-            <img class="w-7" src="./assets/icon-youtube.png" alt="">
-            <img class="w-7" src="./assets/icon-linkedin.png" alt="">
+        <div class="flex gap-3 mb-12 pl-2 ">
+            <img class="w-7 md:h-9" src="./assets/icon-linkedin.png" alt="">
+            <img class="w-7 md:h-8" src="./assets/icon-twitter.png" alt="">
+            <img class="w-7 md:h-9" src="./assets/icon-facebook.png" alt="">
+            <img class="w-7 md:h-9" src="./assets/icon-youtube.png" alt="">
         </div>
     </footer>
 </body>
